@@ -20,6 +20,6 @@ bot.on("message:text", async (ctx) => {
 });
 
 export const POST = webhookCallback(bot, "std/http");
- git add .
- git commit -m "add dic"
- git push -u origin main
+//  git add .
+//  git commit -m "add dic"
+//  git push -u origin main
