@@ -22,7 +22,7 @@ export const dic = (text: string): string => {
 
   const responseText = filteredWords
     .map((word) => wordAndSentences(word))
-    .join("\n---------- ---------- ---------- ---------- ----------\n\n\n");
+    .join("\n---------- ---------- ---------- ----------\n\n\n");
 
   return responseText;
 };
