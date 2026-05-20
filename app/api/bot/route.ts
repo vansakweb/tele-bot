@@ -10,9 +10,9 @@ if (!token)
 
 const bot = new Bot(token);
 bot.on("message:text", async (ctx) => {
-  await ctx.api.sendMessage(ctx.chat.id, dic(ctx.message.text), {
-    parse_mode: "HTML",
-  });
+  // await ctx.api.sendMessage(ctx.chat.id, dic(ctx.message.text), {
+  //   parse_mode: "HTML",
+  // });
 
   await bot.api.sendPhoto(ctx.chat.id, new InputFile("./image.png"), {
     caption: "Hello",
