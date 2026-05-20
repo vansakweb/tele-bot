@@ -20,7 +20,7 @@ export const dic = (text: string): string => {
       english: word.english,
     }));
 
-  const responseText = filteredWords
+  const responseText = filteredWords.length > 0
     ? filteredWords
         .map((word) => wordAndSentences(word))
         .join("\n---------- ---------- ---------- ----------\n\n\n")
@@ -51,6 +51,3 @@ export const wordAndSentences = (word: Word): string => {
 
   return `${wordString}\n\n${sentencesString}`;
 };
-
-console.clear();
-console.log(dic("不"));
